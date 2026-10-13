@@ -15,6 +15,7 @@ authors:
     affiliation: "Platvoet Performance Intelligence (PPI), Remscheid"
     orcid: "https://orcid.org/0009-0004-9230-0808"
 version: 0.1.0
+doi: 10.5281/zenodo.23338209
 date-released: "2026-10-13"
 license: MIT
 keywords:
