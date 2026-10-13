@@ -1,0 +1,67 @@
+S1  Die Felder als Parameterregionen
+
+Feld                       Jahr    Bescheide     1-zeta    g unten     g oben
+-----------------------------------------------------------------------------
+Pflegebegutachtung (MD)     2022   2.541.014      7,3 %     2,16 %     29,6 %
+Rentenbescheide (DRV)       2024   2.000.000      8,0 %     2,15 %     27,1 %
+Buergergeld (SGB II)        2025 nicht belegt nicht belegt nicht belegt     30,9 %
+Berufskrankheiten (DGUV)    2025      56.047 nicht belegt nicht belegt nicht belegt
+
+  Der Rueckfluss liegt, wo er belegt ist, zwischen 7 und 8 Prozent.
+  Er haengt am Rechtsweg und nicht am Volumen.
+
+S2a Die Lage g_0 aus der Eigendeutung, gegen das aufgedeckte g
+
+Feld                        g_0 (Eigendeutung)  g (aufgedeckt)   Faktor       Fenster fuer k/R
+----------------------------------------------------------------------------------------------
+Pflegebegutachtung (MD)           nicht belegt    nicht belegt                                
+Rentenbescheide (DRV)                    0,8 %          27,1 %     33,9         (0,8% ; 27,1%)
+Buergergeld (SGB II)                     8,9 %          30,9 %      3,5         (8,9% ; 30,9%)
+Berufskrankheiten (DGUV)          nicht belegt    nicht belegt                                
+
+  Ein Ruhezustand besteht genau dann, wenn k/R in diesem Fenster liegt.
+  Die Fenster sind weit und nicht knapp. Der Irrtum ist also nicht die
+  Ausnahme eines schmalen Parameterbereichs, sondern der Regelfall fuer
+  jedes mittlere Pruefkostenverhaeltnis.
+
+  Gegenprobe mit grosser Irrtumstiefe, k/R knapp unter g:
+    Rentenbescheide (DRV)      Tiefe  11,5, h*     4600, haelt  10,6 Tage
+    Buergergeld (SGB II)       Tiefe  11,5, h*     4600, haelt   3,5 Tage
+
+S2  Die Vorhersage aus M3 Abschnitt 5.3 an den Feldern
+
+Feld                        Aufdeckungen/Jahr  haelt (Grundfall)  zeta fuer 1 Jahr
+----------------------------------------------------------------------------------
+Pflegebegutachtung (MD)               185.494           0,7 Tage           0,99987
+Rentenbescheide (DRV)                 159.000           0,8 Tage           0,99983
+Buergergeld (SGB II)                  476.728           0,3 Tage      nicht belegt
+Berufskrankheiten (DGUV)         nicht belegt       nicht belegt           0,99388
+
+  Gerechnet mit h* = 342,9 aus dem Grundfall, also mit Beta(20, 380) und
+  knappem Irrtum. In den Feldern ist g groesser und h* damit kleiner.
+
+S3  Wie fest die Meinung sitzen muesste, damit der Zustand ein Jahr haelt
+
+Feld                        noetige Staerke  Vielfaches des Grundfalls
+----------------------------------------------------------------------
+Pflegebegutachtung (MD)             216.383                        541
+Rentenbescheide (DRV)               185.477                        464
+Buergergeld (SGB II)                556.113                       1390
+Berufskrankheiten (DGUV)       nicht belegt               nicht belegt
+
+  Die Staerke ist die Zahl der Beobachtungen, die die Vorverteilung wiegt.
+  Werte dieser Groesse sind keine Meinung mehr, sondern ein Archiv.
+
+S4  Der Befund
+
+  In keinem der vier Felder ist der Ruhezustand nach dem Dauergesetz zu
+  erwarten. Nicht weil das Volumen hoch ist, sondern weil der Rechtsweg
+  einen Rueckfluss von 7 bis 8 Prozent erzwingt. Die Vorhersage aus 5.3
+  bestaetigt sich in der Richtung und benennt die falsche Groesse: nicht
+  die Fallzahl entscheidet, sondern das Produkt lambda * w * (1 - zeta).
+
+  Der Ruhezustand ist danach kein Phaenomen der Verwaltung, sondern der
+  Felder ohne institutionellen Rueckfluss: Bewerbungs- und
+  Kreditablehnung, Inhaltsmoderation, Lieferantenauswahl. Genau dort
+  gibt es keine amtliche Zahl. Das ist die Belegasymmetrie des Papiers.
+

@@ -1,0 +1,57 @@
+AP M3: Dauer des Ruhezustands bei gelockerter Zensur
+
+   Modell:  pi=0.2 alpha=0.35 beta=0.15  ->  u=0.1300 v=0.1200 w=0.7500 g=0.0933
+   Entscheidung: R=100.0 k=7.0  Schwelle k/R=0.0700
+   Fallstrom lambda=50.0 je Periode, Anteil gestoppt 0.750
+
+   Zwei Vorverteilungen, beide mit E[g] = 0,05 unter der Schwelle 0,07,
+   aber von verschiedener Staerke.
+
+   Beta(1,19), Staerke 20, E[g]=0.0500, ein Gegenbeispiel genuegt: True
+      Mittelpfad h* = 17.1 aufgedeckte Faelle
+      zeta    T erwartet (Regime)   T gezogen: Median / 10% / 90%   E[g] Ende
+      0.5     0.6                   3        2       12         0.0935   [A Wartezeit]
+      0.9     2.9                   4        2       29         0.0935   [A Wartezeit]
+      0.98    14.3                  10       3       178        0.0933   [A Wartezeit]
+      1.0     inf                   kein Umschlag in 20000 Perioden        0.0500   [Fixpunkt]
+
+   Beta(20,380), Staerke 400, E[g]=0.0500, ein Gegenbeispiel genuegt: False
+      Mittelpfad h* = 342.9 aufgedeckte Faelle
+      zeta    T erwartet (Regime)   T gezogen: Median / 10% / 90%   E[g] Ende
+      0.5     18.3                  18       9       39         0.0933   [B Mittelpfad]
+      0.9     91.4                  84       36      204        0.0932   [B Mittelpfad]
+      0.98    457.1                 458      191     993        0.0934   [B Mittelpfad]
+      1.0     inf                   kein Umschlag in 20000 Perioden        0.0500   [Fixpunkt]
+
+   Q3: Skalierung der Dauer
+      zeta=0.5     T=      18.3 Perioden
+      zeta=0.9     T=      91.4 Perioden
+      zeta=0.99    T=     914.3 Perioden
+      zeta=0.999   T=    9142.9 Perioden
+      Staerke=20.0    h*=    17.1 aufgedeckte Faelle
+      Staerke=100.0   h*=    85.7 aufgedeckte Faelle
+      Staerke=400.0   h*=   342.9 aufgedeckte Faelle
+      Staerke=2000.0  h*=  1714.3 aufgedeckte Faelle
+
+   Q5: volumenfreie Fassung, gestoppte Faelle bis zum Umschlag
+      lambda=10.0   gestoppte Faelle bis Umschlag (Median) =     3216   Perioden =     429
+      lambda=50.0   gestoppte Faelle bis Umschlag (Median) =     3116   Perioden =      84
+      lambda=250.0  gestoppte Faelle bis Umschlag (Median) =     3027   Perioden =      17
+
+   Q6: Dieselbe Maschine, verschiedene Fallmischung.
+   Sensitivitaet 1-alpha und Spezifitaet 1-beta sind fest und vollstaendig bekannt.
+   Gefragt ist g = P(theta=1 | stopp), und davon haengt die Pruefschwelle ab.
+
+      pi      g        Schwelle k/R=0,07 ueberschritten?   noetige Pruefkosten k
+      0.02    0.0083   nein, nicht pruefen                     0.83
+      0.05    0.0212   nein, nicht pruefen                     2.12
+      0.1     0.0437   nein, nicht pruefen                     4.37
+      0.2     0.0933   ja, pruefen                             9.33
+      0.4     0.2154   ja, pruefen                            21.54
+      0.6     0.3818   ja, pruefen                            38.18
+
+      Dieselbe Maschine verlangt je nach Fallmischung eine Schwelle zwischen
+      0.83 und 38.18, also um den Faktor 46 verschieden.
+      Die Fallmischung ist genau die Groesse, die die Zensur verbirgt.
+
+alle Pruefungen bestanden

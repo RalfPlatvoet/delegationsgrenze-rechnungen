@@ -1,0 +1,21 @@
+{
+  "lauf_kennung": "aff73a7643fa-8d44d5b-20261011",
+  "gitter": {
+    "name": "pruefvorlauf-ueber-k_R-und-zeta",
+    "punkte": 45,
+    "kanonisch": "L=50;R=100;T_H=30;alpha=0.35;beta=0.15;delta=0.95;eps_gitter=6;g_0=0.05;k_R=0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.1,0.11;lam=100;name=pruefvorlauf-ueber-k_R-und-zeta;pi=0.2;staerke=20;vorlaeufe=0,1,2,3,5,8,13,21;zeta=1,0.999,0.99,0.95,0.9;ziehungen=150"
+  },
+  "abgeleitet": {
+    "g_wahr": 0.093333,
+    "w_wahr": 0.75,
+    "fenster": [
+      0.05,
+      0.093333
+    ]
+  },
+  "seed": 20261011,
+  "zeilen": 45,
+  "zeitpunkt": "2026-10-11T12:46:07+00:00",
+  "python": "3.13.0",
+  "rechner": "MacBook-Pro-3.fritz.box"
+}

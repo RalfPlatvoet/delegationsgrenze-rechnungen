@@ -1,0 +1,22 @@
+AP M2: Nachrechnung der Formalisierung
+
+ok   P1,P3,P4,P7,P8,P10 geschlossen, 20.000 Parametersaetze
+ok   P2 Faktorisierung der Likelihood, 5.000 Stichproben
+
+P5 und P9, Ziehen ueber 60.000 Faelle je Aufdeckungsgrad:
+   nu=0.0   aufgedeckt=0      E[g]=0.4000 sd=0.2000  (g wahr 0.0933, Vorverteilung 0.4000)
+   nu=0.05  aufgedeckt=2317   E[g]=0.1038 sd=0.0063  (g wahr 0.0933, Vorverteilung 0.4000)
+   nu=0.5   aufgedeckt=22409  E[g]=0.0925 sd=0.0019  (g wahr 0.0933, Vorverteilung 0.4000)
+ok   P5, P9
+
+P11, der Ruhezustand als Fixpunkt, 40.000 Faelle je Zeile:
+   k        E[g] Start   geprueft   E[g] Ende   Ruhezustand   Verlust/Fall
+   10.0     0.0500      0          0.0500      True          0.00
+   7.0      0.0500      0          0.0500      True          2.33
+   3.0      0.0500      30025      0.0939      False         0.00
+   10.0     0.8000      1530       0.1000      False         0.00
+ok   P11
+
+ok   P12 Kanalwahl, 20.000 Parametersaetze
+
+alle Pruefungen bestanden

@@ -1,0 +1,29 @@
+AP S3: Transparenzberichte nach dem Digital Services Act
+
+TikTok DSA Transparency Report, 1. Januar bis 30. Juni 2025, EU
+  Entfernungen          27,835,160
+  Beschwerden            3,075,758
+  Wiederherstellungen    1,359,823
+  1 - zeta, auf Entfernungen bezogen    0.1105
+  1 - zeta, auf alle Massnahmen bezogen  0.0154
+  g, obere Schranke                     0.4421
+  g, untere Schranke                    0.0489
+  Aufdeckungen je Tag                        16,853
+  Haltedauer des Ruhezustands in Tagen  0.0203
+  zeta, das ein Jahr Haltedauer braeuchte  0.99999384
+
+Facebook DSA VLOP Transparency Report, 1. Oktober bis 31. Dezember 2024, EU
+  Entfernungen          38,801,156
+  Beschwerden            2,012,836
+  Wiederherstellungen      650,158
+  1 - zeta, auf Entfernungen bezogen    0.0519
+  g, obere Schranke                     0.3230
+  g, untere Schranke                    0.0168
+  Aufdeckungen je Tag                        22,058
+  Haltedauer des Ruhezustands in Tagen  0.0155
+  zeta, das ein Jahr Haltedauer braeuchte  0.99999779
+
+Vergleich mit den Verwaltungsfeldern aus AP M5:
+  dort 1 - zeta = 0,073 bis 0,080, g oben = 0,271 bis 0,309, g unten = 0,0215 bis 0,0216
+  hier 1 - zeta = 0,052 bis 0,111, g oben = 0,323 bis 0,442, g unten = 0,0168 bis 0,0489
+  Beide Felderarten fallen damit auf dieselbe Region.

@@ -1,0 +1,124 @@
+AP M4: eps* numerisch
+
+   Wahre Umgebung: pi=0.2 alpha=0.35 beta=0.15  ->  g=0.0933, Anteil gestoppt w=0.750
+   Gesucht wird ueber eps in 6 Gitterpunkten und ueber den Vorlauf in (0, 1, 2, 3, 5, 8, 13, 21)
+   Horizont T_H=30, je Politik 150 Ziehungen des Umweltzustands
+
+   S1: Wann ist blinde Erkundung der billigere Informationskanal?
+       Pruefung billiger  <=>  k < (1 - g_0) * L
+
+       g_0     L      (1-g_0)*L   g*R      Fenster [max(R*g_0,(1-g_0)L), g*R)
+       0.02    2.0    1.96        9.33     [2.00, 9.33)  offen
+       0.02    5.0    4.90        9.33     [4.90, 9.33)  offen
+       0.02    20.0   19.60       9.33     [19.60, 9.33)  leer
+       0.02    50.0   49.00       9.33     [49.00, 9.33)  leer
+       0.02    200.0  196.00      9.33     [196.00, 9.33)  leer
+       0.05    2.0    1.90        9.33     [5.00, 9.33)  offen
+       0.05    5.0    4.75        9.33     [5.00, 9.33)  offen
+       0.05    20.0   19.00       9.33     [19.00, 9.33)  leer
+       0.05    50.0   47.50       9.33     [47.50, 9.33)  leer
+       0.05    200.0  190.00      9.33     [190.00, 9.33)  leer
+       0.2     2.0    1.60        9.33     [20.00, 9.33)  leer
+       0.2     5.0    4.00        9.33     [20.00, 9.33)  leer
+       0.2     20.0   16.00       9.33     [20.00, 9.33)  leer
+       0.2     50.0   40.00       9.33     [40.00, 9.33)  leer
+       0.2     200.0  160.00      9.33     [160.00, 9.33)  leer
+       0.5     2.0    1.00        9.33     [50.00, 9.33)  leer
+       0.5     5.0    2.50        9.33     [50.00, 9.33)  leer
+       0.5     20.0   10.00       9.33     [50.00, 9.33)  leer
+       0.5     50.0   25.00       9.33     [50.00, 9.33)  leer
+       0.5     200.0  100.00      9.33     [100.00, 9.33)  leer
+
+       16 von 20 Fenstern sind leer.
+
+   S2 und S3: Die beste Politik, durchmustert
+
+      L      k     zeta  delta  Staerke  eps*  Vorlauf  Vorlauf in
+                                                         gest. Faellen
+      50.0   7.0   1.0   0.95   20       0.00  1        75
+      50.0   7.0   1.0   0.95   400      0.00  0        0
+      50.0   7.0   1.0   0.7    20       0.00  1        75
+      50.0   7.0   0.9   0.95   20       0.00  0        0
+      50.0   7.0   0.9   0.95   400      0.00  0        0
+      50.0   7.0   0.9   0.7    20       0.00  0        0
+      50.0   8.0   1.0   0.95   20       0.00  1        75
+      50.0   8.0   1.0   0.95   400      0.00  0        0
+      50.0   8.0   1.0   0.7    20       0.00  0        0
+      50.0   8.0   0.9   0.95   20       0.00  0        0
+      50.0   8.0   0.9   0.95   400      0.00  0        0
+      50.0   8.0   0.9   0.7    20       0.00  0        0
+      50.0   20.0  1.0   0.95   20       0.00  0        0
+      50.0   20.0  1.0   0.95   400      0.00  0        0
+      50.0   20.0  1.0   0.7    20       0.00  0        0
+      50.0   20.0  0.9   0.95   20       0.00  0        0
+      50.0   20.0  0.9   0.95   400      0.00  0        0
+      50.0   20.0  0.9   0.7    20       0.00  0        0
+      50.0   60.0  1.0   0.95   20       0.00  0        0
+      50.0   60.0  1.0   0.95   400      0.00  0        0
+      50.0   60.0  1.0   0.7    20       0.00  0        0
+      50.0   60.0  0.9   0.95   20       0.00  0        0
+      50.0   60.0  0.9   0.95   400      0.00  0        0
+      50.0   60.0  0.9   0.7    20       0.00  0        0
+      5.0    6.0   1.0   0.95   20       0.00  1        75
+      5.0    6.0   1.0   0.95   400      1.00  0        0
+      5.0    6.0   1.0   0.7    20       0.20  0        0
+      5.0    6.0   0.9   0.95   20       0.00  1        75
+      5.0    6.0   0.9   0.95   400      1.00  0        0
+      5.0    6.0   0.9   0.7    20       0.00  0        0
+      200.0  7.0   1.0   0.95   20       0.00  1        75
+      200.0  7.0   1.0   0.95   400      0.00  0        0
+      200.0  7.0   1.0   0.7    20       0.00  1        75
+      200.0  7.0   0.9   0.95   20       0.00  0        0
+      200.0  7.0   0.9   0.95   400      0.00  0        0
+      200.0  7.0   0.9   0.7    20       0.00  0        0
+
+   S4: Gegenprobe
+      Zeilen mit eps* > 0:      3 von 36
+      Zeilen mit Vorlauf > 0:   7 von 36
+         eps* = 1.00 bei L=5.0, k=6.0, zeta=1.0, delta=0.95, Staerke=400.0
+         eps* = 0.20 bei L=5.0, k=6.0, zeta=1.0, delta=0.7, Staerke=20.0
+         eps* = 1.00 bei L=5.0, k=6.0, zeta=0.9, delta=0.95, Staerke=400.0
+
+   S5: Der Vergleich der Kanaele, je gestoppten Fall, bei g_0 = 0,05
+      L      k     Abweichung durch Pruefen   durch blinde Erkundung   billiger
+      5.0    7.0   2.00                       -0.25                    blinde Erkundung (kein Informationskauf: blind behandeln lohnt ohnehin)
+      5.0    60.0  55.00                      -0.25                    blinde Erkundung (kein Informationskauf: blind behandeln lohnt ohnehin)
+      50.0   7.0   2.00                       42.50                    Pruefung
+      50.0   60.0  55.00                      42.50                    blinde Erkundung
+      200.0  7.0   2.00                       185.00                   Pruefung
+      200.0  60.0  55.00                      185.00                   Pruefung
+
+   S6: Der eine innere Optimalwert, und sein Motiv hat das umgekehrte Vorzeichen
+      Lage: L=5.0, k=6.0, g wahr=0.0933, g_0=0.05
+      Zielgroesse ueber eps, 400 Ziehungen, delta=0.70:
+         eps=0.0      10341.09
+         eps=0.1      10424.76
+         eps=0.2      10423.09
+         eps=0.3      10415.18
+         eps=0.4      10405.40
+         eps=0.5      10395.02
+         eps=0.6      10384.44
+         eps=0.7      10373.43
+         eps=0.8      10362.36
+         eps=0.9      10351.44
+         eps=1.0      10340.40
+      Innerer Optimalwert bei eps = 0.1.
+
+      **Das Motiv ist nicht das der Erkundung.** Je gestoppten Fall gilt
+         blind behandeln:  g*R - (1-g)*L = 4.80
+         pruefen:          g*R - k       = 3.33
+      Blindes Behandeln ist hier **besser als Pruefen**, weil der Schaden klein
+      ist gegen den entgangenen Ertrag. Wer lernt, faengt an zu pruefen und wird
+      dadurch schlechter. Mehr Erkundung beschleunigt das Lernen und damit den
+      Wechsel zu der schlechteren Handlung; der innere Wert ist der Ausgleich
+      zweier gegenlaeufiger Wirkungen und **nicht** der Erkundungswert, den
+      Konzept 2.5 gemeint hat.
+
+   Ergebnis, in drei Saetzen.
+      Erstens: eps* ist in 3 von 36 Zeilen von null
+      verschieden, und alle liegen in dem engen Fenster aus S1.
+      Zweitens: Dort ist eps **kein Erkundungsinstrument**. Blindes Behandeln ist
+      dort besser als Pruefen, das Lernen fuehrt zur schlechteren Handlung, und
+      das Motiv des inneren Wertes hat nach S6 das umgekehrte Vorzeichen.
+      Drittens: Die Zahl, die das Modell wirklich hergibt, ist der **Pruefvorlauf**,
+      und er ist in gestoppten Faellen anzugeben, nicht in Perioden.

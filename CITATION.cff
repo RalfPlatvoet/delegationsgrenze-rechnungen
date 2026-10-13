@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: >-
+  Wer eine Rechnung dieses Archivs nachvollzieht, zitiert bitte das Working Paper,
+  diesen Datensatz und den Rechenkern.
+title: "Delegationsgrenze: die Rechnungen zum Papier"
+abstract: >-
+  Arbeitsspur zum Working Paper "Die Delegationsgrenze": die Skripte, die die
+  gerechneten Zahlen des Papiers erzeugt haben, mit ihren Ausgaben, dem Gitterlauf
+  zu Abbildung 1 und einer unveraenderten Kopie des Rechenkerns in Fassung 0.1.0.
+type: software
+authors:
+  - family-names: Platvoet
+    given-names: Ralf
+    email: ralf.platvoet@platvoet.org
+    affiliation: "Platvoet Performance Intelligence (PPI), Remscheid"
+    orcid: "https://orcid.org/0009-0004-9230-0808"
+version: 0.1.0
+date-released: "2026-10-13"
+license: MIT
+keywords:
+  - delegation
+  - real authority
+  - decision chain
+  - censored feedback
+  - reproducibility
+references:
+  - type: software
+    title: "Delegationsgrenze: der Rechenkern"
+    version: 0.1.0
+    doi: 10.5281/zenodo.23336889
+    authors:
+      - family-names: Platvoet
+        given-names: Ralf
+        orcid: "https://orcid.org/0009-0004-9230-0808"
+  - type: report
+    title: >-
+      Die Delegationsgrenze. Maschinelle Bewertung, reale Autoritaet und die
+      Architektur betrieblicher Entscheidungsketten. Eine modelltheoretische
+      Untersuchung mit rechenbarem Modell
+    authors:
+      - family-names: Platvoet
+        given-names: Ralf
+        orcid: "https://orcid.org/0009-0004-9230-0808"
+    institution:
+      name: "Platvoet Performance Intelligence (PPI)"
+    number: "PPI Working Paper 09/2026"
+    year: 2026
+    month: 10
+    license: CC-BY-4.0

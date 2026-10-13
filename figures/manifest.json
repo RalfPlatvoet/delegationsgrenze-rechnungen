@@ -1,0 +1,11 @@
+{
+  "abb-1-pruefvorlauf": {
+    "datei": "figures/abb-1-pruefvorlauf.svg",
+    "kapitel": "8.4",
+    "titel": "Der Pruefvorlauf ueber Pruefkostenverhaeltnis und Zensurgrad",
+    "lauf_kennung": "aff73a7643fa-8d44d5b-20261011",
+    "erzeugt_von": "s8_abbildung.py:zeichnen",
+    "gitterpunkte": 45,
+    "punkte_mit_vorlauf": 28
+  }
+}
